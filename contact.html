@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Ocean | Life</title>
+ <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="css/normalize.css">
+ <link rel="stylesheet" href="css/reset.css">
+ <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  
+  <header class="header scroll-down" role="header">
+    <div class="container container--header">
+    <h1 class="logo logo--header">Logo</h1>
+    <nav class="navbar">
+      
+    <div class="container container--nav">
+      <h1 class="logo logo--nav">Logo</h1>
+      <div class="nav-close">
+        <svg class="close-button" style="padding: .1em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"/></svg>
+      </div>
+    </div>
+      <ul class="main-nav">
+        <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+        <li class="nav__item dropdown-trigger">
+          <a href="" class="nav__link dropdown-toggle">Products</a>
+          <ul class="dropdown">
+            <li class="dropdown__item"><a href="healthcare.html" class="dropdown__link">Healthcare</a></li>
+            <li class="dropdown__item"><a href="#" class="dropdown__link">Automation</a></li>
+            <li class="dropdown__item"><a href="#" class="dropdown__link">Print</a></li>
+            <li class="dropdown__item"><a href="#" class="dropdown__link">Design</a></li>
+          </ul>
+        </li>
+      
+        <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+        <li class="nav__item"><a href="#" class="nav__link  nav__link--active">Contact</a></li>
+      </ul>
+
+      <ul class="nav__contact">
+        <li class="nav__contact__item">
+             <a class="phone" href="tel: +919876543210">
+              <svg width="20px" height="20px"  class="icon icon--nav icon--phone"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M20 18.35V19a1 1 0 0 1-1 1h-2A17 17 0 0 1 0 3V1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v4c0 .56-.31 1.31-.7 1.7L3.16 8.84c1.52 3.6 4.4 6.48 8 8l2.12-2.12c.4-.4 1.15-.71 1.7-.71H19a1 1 0 0 1 .99 1v3.35z"/></svg> 
+            +91 842 718 5921
+            </a>
+            </li>
+        </ul>
+    </nav>
+  
+    <div class="nav-show">
+      <button class="toggle-button"></button>
+    </div>
+  </div>
+   </header>
+  
+
+  <main role="main">
+    <section id="home" class="intro intro--contact">
+      <article class="textbox textbox--intro textbox--intro--contact">
+        <h2 class="section__title section__title--intro">Don't be a stranger</h2>
+        <p class="section__subtitle section__subtitle--intro section__subtitle--intro--contact">The government they survive artical of fortune</p>
+      </article>
+      <div class="form_container">
+        <form method="POST" data-email="anishsajwan2001@gmail.com" action="https://script.google.com/macros/s/AKfycbxi_72kW1psoiLn8Nf2suiF3VIWDpRdwpvO-kY2Iw/exec" class="form">
+            <input type="text" id="name" name="name" placeholder="Name" class="form__input" required>
+            <input type="email" id="email" name="email" placeholder="Email" class="form__input">
+            <input type="tel" maxlength="10" minlength="10"  id="phone" name="phone" placeholder="Mobile No." class="form__input" required>
+            <textarea name="message" id="message" placeholder="Message" class="form__textarea"></textarea>
+            <input type="submit" value="SEND MESSAGE" id="submit" class="btn btn--primary">
+            
+            <div style="display:none" class="thankyou_message">
+                <h2><em>Thanks</em> for contacting us! We will get back to you soon!
+                </h2>
+            </div>
+        </form>
+    </div>
+    
+      </section>
+
+      <section id="contact" class="contact-us">
+        <div class="contact__main">
+         <h2 class="section__title section__title--contact">
+           Drop Us A LIne
+         </h2>
+ 
+         <address class="contact__info">
+         <ul class="contacts">
+           <li class="contact">
+             <h3 class="contact__media">
+               Email
+             </h3> 
+             <p class="contact__address"><a class="contact__address" class="email" href="mailto:supporthere@mail.com">   
+               supporthere@gmail.com 
+             </a></p>
+             </li>
+           <li class="contact">
+             <h3 class="contact__media">
+               Phone
+             </h3>
+             <p class="contact__address"><a class="phone" href="tel: +919876543210">
+               +91 987 654 3210
+               </a>
+             </p>
+             </li>
+             </li>
+           <li class="contact">
+             <h3 class="contact__media">
+               Visit
+             </h3>
+             <p class="contact__address">
+               Plot No. 62 Industrial Area,<br> Phase - II,<br> CHANDIGARH
+             </p>
+             </li>
+         </ul>
+       </address>
+        </div>
+       </section> 
+</main>
+
+<script src = "js/nav.js"></script>
+</body>
