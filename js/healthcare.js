@@ -6,18 +6,21 @@ const categories = [
             name: 'Mask',
             desc: 'Description',
             type: 'mask',
+            alt: ''
         },
         
         {
             name: 'Mask',
             desc: 'Description',
             type: 'mask',
+            alt: ''
         },
         
         {
             name: 'Mask',
             desc: 'Description',
             type: 'mask',
+            alt: ''
         }
     ]
 ];
@@ -38,7 +41,7 @@ categories.forEach((category, index)  => {
         </div>
         <div class="product__image">
             <a>
-                <img class="img" src="products/${product.type}-${index+1}.jpg" alt="Description of the great product's appearance">
+                <img class="img" src="products/healthcare/${product.type}-${index+1}.jpg" alt=${product.alt}>
             </a>
             </div>`
         productLi.classList.add('product');
@@ -46,23 +49,4 @@ categories.forEach((category, index)  => {
     })
     categoryUl.classList.add('products');
     productsSection.appendChild(categoryUl);
-})
-
-
-/*
-<ul class="products products--masks" id="masks">
-<li class="product">
-    <div class="product__body">
-        <h3 class="product__title">
-            <a href="">A great product</a>
-        </h3>
-        <p>Description of the great product</p>
-        <small>By Great Products(TM)</small>
-    </div>
-    <div class="product__image">
-        <a>
-            <img class="img" src="Images/b.jpg" alt="Description of the great product's appearance">
-        </a>
-        </div>
-</li>
-*/
+});
