@@ -181,6 +181,7 @@ p{
     margin-bottom: .8em;
 }
 
+
 .section__title::after{
     content: '';
     width: 60px;
@@ -507,6 +508,11 @@ section, .footer{
     align-items: center;
 }
 
+.textbox--intro--contact{
+    width: 100%;
+    margin: 0 auto;
+}
+
 .textbox--intro--about{
     text-align: center;
     justify-content: center;
@@ -525,6 +531,9 @@ section, .footer{
     margin-bottom: .2em;
 }
 
+.section__title--intro--contact{
+    font-size: var(--fs-4);
+}
 
 
 .section__title--intro::after{
@@ -908,10 +917,12 @@ section, .footer{
 
 
 .form_container{
-    width: 450px;
+    margin: 0 auto;
     background: var(--clr-creamy);
     border-radius: 4px;
     box-shadow: 0 0 5px rgba(0,0,0,.15);
+    width: 90%;
+    max-width: 450px;
 }
 
 .form{
@@ -1280,6 +1291,10 @@ input::placeholder{
         position: absolute;
         
         top: 70%;
+    }
+
+    .form_container{
+        margin: unset;  
     }
 
 }
