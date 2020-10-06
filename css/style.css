@@ -122,9 +122,18 @@ p{
 	transform: rotate(18deg);
 }
 
+.icon--whatsapp{
+    width: 25px;
+    height: 25px;
+}
+
 .icon--nav {
     fill: var(--clr-primary);
     margin-right: .1em;
+}
+
+.icon--nav.icon--phone{
+    margin-right: .4em;
 }
 
 .icon--service{
@@ -348,7 +357,7 @@ section, .footer{
 }
 
 .main-nav{
-    padding: 1em 0;
+    padding: 1em 0 .5em 0;
 }
 
 .nav__item{
@@ -357,11 +366,15 @@ section, .footer{
 }
 
 .nav__contact{
-	padding: 1em;
+	padding: 0 1em;
 }
 
 .nav__contact__item{
-	font-weight: 500;
+    font-weight: 500;
+}
+
+.nav__contact__item{
+    margin-bottom: .5em; 
 }
 
 
