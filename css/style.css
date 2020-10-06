@@ -286,7 +286,7 @@ section, .footer{
     padding: 5em 1.5em;
 }
 
-.topbar__item{
+.topbar{
     display: none;
 }
 
@@ -469,6 +469,7 @@ section, .footer{
     min-height: unset;
     height: 400px;
     background: url('../Images/back1.jpg');
+    /* background-attachment: fixed; */
 }
 
 .intro--contact{
@@ -1065,6 +1066,7 @@ input::placeholder{
     }   
 
     .topbar{
+        display: block;
         background-color: var(--clr-primary);
         color: var(--clr-white);
         padding: .6em .5em; 
