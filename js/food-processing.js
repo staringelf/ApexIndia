@@ -32,6 +32,7 @@ categories.forEach((category, index)  => {
     categoryUl.id = ids[index].getAttribute('href').substring(1);
     category.forEach((product, index) => {
         const productLi = document.createElement('li');
+        productLi.dataset.name = product.name;
         productLi.innerHTML = `<div class="product__body">
             <h3 class="product__title">
                 <a href="">${product.name}</a>
@@ -40,7 +41,7 @@ categories.forEach((category, index)  => {
             <small>By ApexIndia</small>
         </div>
         <div class="product__image">
-            <a>
+            <a class="product__image__link">
                 <img class="img" src="products/food-processing/food-processing-${index+1}.jpg" alt=${product.alt}>
             </a>
             </div>`
