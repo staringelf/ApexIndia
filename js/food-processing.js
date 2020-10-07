@@ -4,14 +4,26 @@ const categories = [
     [
         {
             name: 'Chappati Making Machine',
+            details: {
+                Material: 'Stainless Steel',
+                Voltage: '220 - 380 V',
+                Frequency: '50 - 60 Hz',
+                'Dough capacity': '20kg - 25kg' 
+            },
             desc: 'Fully Automatic',
             type: 'food-processing',
             alt: ''
         },
         
         {
-            name: 'Dough Kneader',
-            desc: 'Fully Automatic',
+            name: 'Atta Dough Kneader',
+            details: {
+                Material: 'Stainless Steel',
+                Voltage: '220 - 380 V',
+                Frequency: '50 - 60 Hz',
+                'Dough capacity': '20kg - 25kg' 
+            },
+            desc: 'and',
             type: 'food-processing',
             alt: ''
         },
@@ -19,6 +31,12 @@ const categories = [
         {
             name: 'Bio Mass Burner',
             desc: 'Description',
+            details: {
+                material: 'Stainless Steel',
+                voltage: '220 - 380 V',
+                frequency: '50 - 60 Hz',
+                'Dough capacity': '20kg - 25kg' 
+            },
             type: 'food-processing',
             alt: ''
         }
@@ -33,6 +51,10 @@ categories.forEach((category, index)  => {
     category.forEach((product, index) => {
         const productLi = document.createElement('li');
         productLi.dataset.name = product.name;
+        const properties = Object.keys(product.details);
+        const values = Object.values(product.details);
+        productLi.dataset.properties = properties;
+        productLi.dataset.values = values;
         productLi.innerHTML = `<div class="product__body">
             <h3 class="product__title">
                 <a href="">${product.name}</a>
