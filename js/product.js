@@ -28,5 +28,7 @@ imageLinks.forEach(image => image.addEventListener('click', function(e){
     document.body.classList.add('unscroll');
     productCard.classList.add('appear');
     productImage.innerHTML = `<img src="${imageClicked.src}" alt="">`;
-    productBody.innerHTML = `<h4>${e.target.parentNode.parentNode.parentNode.dataset.name}</h4>`;
+    productBody.innerHTML = `<h4>${e.target.parentNode.parentNode.parentNode.dataset.name}</h4>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>And
+    `;
 }));
