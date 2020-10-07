@@ -64,7 +64,7 @@ categories.forEach((category, index)  => {
         </div>
         <div class="product__image">
             <a class="product__image__link">
-                <img class="img" src="products/food-processing/food-processing-${index+1}.jpg" alt=${product.alt}>
+                <img class="img" src="products/food-processing/food-processing-${index+1}.JPG" alt="">
             </a>
             </div>`
         productLi.classList.add('product');
