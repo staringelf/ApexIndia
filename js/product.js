@@ -32,7 +32,7 @@ imageLinks.forEach(image => image.addEventListener('click', function(e){
     document.body.classList.add('unscroll');
     modal.classList.add('appear');
     productImage.innerHTML = `<img src="${imageClicked.src}" alt="">`;
-    productBody.innerHTML = `<h4 class="product__title" style="text-align: center">${productLi.dataset.name}</h4>
+    productBody.innerHTML = `<h4 class="product-card__title">${productLi.dataset.name}</h4>
     `;
     const properties = productLi.dataset.properties.split(',');
     const values = productLi.dataset.values.split(',');

@@ -69,7 +69,7 @@ const categories = [
         },
         
         {
-            name: 'Atta Dough Kneader',
+            name: 'U-Drum Dough Kneading Machine',
             desc: 'Stainless Steel',
             details: {
                 Material: 'Stainless Steel',
@@ -80,7 +80,83 @@ const categories = [
             type: 'food-processing',
             alt: ''
         },
+        
+        {
+            name: 'Potato Peeler Machine',
+            desc: 'Stainless Steel',
+            details: {
+                Material: 'Stainless Steel',
+                Voltage: '220V - 380V',
+                Frequency: '50 - 60 Hz',
+                'Dough Capacity': '20kg - 25kg'
+            },
+            type: 'food-processing',
+            alt: ''
+        },
+
+        {
+            name: '10 Kg Potato Peeling Machine',
+            desc: 'Stainless Steel',
+            details: {
+                Material: 'Stainless Steel',
+                'Tank Capacity': '10 Kg',
+                Voltage: '220V - 380V',
+                Frequency: '50 - 60 Hz',
+                'Machine Weight': '55Kg',
+                'Production Capacity': '300 - 400kg/day'
+            },
+            type: 'food-processing',
+            alt: ''
+        },
+        
+        {
+            name: 'Peda Cutting Machine',
+            desc: 'Stainless Steel',
+            details: {
+                Material: 'Stainless Steel',
+                Voltage: '220V - 380V',
+                Frequency: '50 - 60 Hz',
+                'Power Source': 'Electric',
+                'Surface Finishing': 'Polished'
+            },
+            type: 'food-processing',
+            alt: ''
+        },
+    ],
+
+    [
+        {    
+            name: 'Stainless Steel Dining Table',
+            desc: 'Mess - Canteen, Hotels',
+            details: {
+                'Base Type': 'Stainless Steel',
+                Usage: 'Restaurants, Hotels, Canteens',
+                Size: '8.3 * 3.5',
+                Voltage: '220V - 380V',
+                Frequency: '50 - 60 Hz',
+                'Power Source': 'Electric',
+                'Surface Finish': 'Mirror Finish'
+            },
+            type: 'kitchen-equipment',
+            alt: ''
+        },
+        
+        {    
+            name: 'Khoya Making Machine',
+            desc: 'Stainless Steel',
+            details: {
+                Capacity: '100 Litres',
+                Material: 'Stainless Steel',
+                'Equipment Type': 'Milk Storage Tanks',
+                'Power Source': 'Electric',
+            },
+            type: 'kitchen-equipment',
+            alt: ''
+        
+        }
+
     ]
+
 ];
 
 const ids = document.querySelectorAll('.side__link');
