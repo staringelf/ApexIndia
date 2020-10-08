@@ -233,6 +233,15 @@
     margin: auto;
     padding: 0;
     padding: 5px;
+	animation: grow .5s ease;
+}
+
+@keyframes grow{
+        from{transform: scale(0.4);}
+        
+		to{
+            transform: scale(1);
+        }
 }
 
 
@@ -322,17 +331,19 @@
         display: flex;
         border-radius: 4px;
         padding: 0;
-        animation: grow .5s ease-out;
         position: relative;
         margin: auto;
     }
-
-    @keyframes grow{
-        from{transform: scale(0)}
-        to{
+	
+	@keyframes grow{
+        from{transform: scale(0.2);}
+        
+		to{
             transform: scale(1);
         }
-    }
+}
+
+
 
     .product-card__image{
         padding: 2px;
@@ -664,3 +675,6 @@
       transform: translate3d(0, 0, 0);
     }
   }
+  
+  
+    
