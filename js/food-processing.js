@@ -5,41 +5,81 @@ const categories = [
         {
             name: 'Chappati Making Machine',
             details: {
-                Material: 'Stainless Steel',
-                Voltage: '220 - 380 V',
+                Capacity: '1000 Chapati per hour',
+                'Chapati Size': '5 - 6"',
                 Frequency: '50 - 60 Hz',
-                'Dough capacity': '20kg - 25kg' 
+                Voltage: '380 - 440V'
             },
-            desc: 'Fully Automatic',
+            desc: 'Fully Automatic, Electric',
+            type: 'food-processing',
+            alt: 'Fully Automatic chappati puri making machine'
+        },
+        
+        {
+            name: 'Semi Automatic Chappati Making Machine',
+            details: {
+                Capacity: '800 Chapati per hour',
+                'Chapati Size': '4 - 5"',
+                Frequency: '60 Hz',
+                'Power Source': 'Electric'
+            },
+            desc: 'Semi Automatic',
+            type: 'food-processing',
+            alt: ''
+        },
+        
+        {
+            name: 'Semi Automatic Roti Making Machine',
+            desc: 'Description',
+            details: {
+                Material: 'Stainless Steel',
+                Capacity: '2000 Chapati per hour',
+                'Chapati Size': '5-6" and 4-5"',
+                Frequency: '50 - 60 Hz',
+                Voltage: '380-440V'
+            },
+            type: 'food-processing',
+            alt: ''
+        },
+
+        {
+            name: 'Biomass Pellet Stove',
+            desc: 'Canteen/Hotels',
+            details: {
+                Material: 'Stainless Steel',
+                Voltage: '220V - 380V',
+                Frequency: '50 - 60 Hz',
+                'Power Source': 'Electric'
+            },
             type: 'food-processing',
             alt: ''
         },
         
         {
             name: 'Atta Dough Kneader',
+            desc: 'Stainless Steel',
             details: {
                 Material: 'Stainless Steel',
-                Voltage: '220 - 380 V',
+                Voltage: '220V - 380V',
                 Frequency: '50 - 60 Hz',
-                'Dough capacity': '20kg - 25kg' 
+                'Dough Capacity': '20kg - 25kg'
             },
-            desc: 'and',
             type: 'food-processing',
             alt: ''
         },
         
         {
-            name: 'Bio Mass Burner',
-            desc: 'Description',
+            name: 'Atta Dough Kneader',
+            desc: 'Stainless Steel',
             details: {
-                material: 'Stainless Steel',
-                voltage: '220 - 380 V',
-                frequency: '50 - 60 Hz',
-                'Dough capacity': '20kg - 25kg' 
+                Material: 'Stainless Steel',
+                Voltage: '220V - 380V',
+                Frequency: '50 - 60 Hz',
+                'Dough Capacity': '20kg - 25kg'
             },
             type: 'food-processing',
             alt: ''
-        }
+        },
     ]
 ];
 
