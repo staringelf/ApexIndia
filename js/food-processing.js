@@ -178,9 +178,9 @@ categories.forEach((category, index)  => {
             <p>${product.desc}</p>
             <small>By ApexIndia</small>
         </div>
-        <div class="product__image">
+        <div class="product__image noSelect">
             <a class="product__image__link">
-                <img class="img" src="products/food-processing/food-processing-${index+1}.JPG" alt="">
+                <img class="img noSelect" src="products/food-processing/food-processing-${index+1}.JPG" alt="">
             </a>
             </div>`
         productLi.classList.add('product');
