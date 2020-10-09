@@ -37,12 +37,13 @@ imageLinks.forEach(image => image.addEventListener('click', function(e){
     const properties = productLi.dataset.properties.split(',');
     const values = productLi.dataset.values.split(',');
 
+	const propertiesTable = document.createElement('table');
+	propertiesTable.className = 'product-card__table';
+
     properties.forEach((property, index) => {
-        const div = document.createElement('div');
-        div.textContent = `${property}: ${values[index]}`;
-        console.log(div);
-        productBody.appendChild(div);
+        const propertiesTr = document.createElement('tr');
+        propertiesTr.innerHTML = `<th class="product-card__th">${property}:</th> <td class="product-card__td">${values[index]}</td>`;
+        propertiesTable.appendChild(propertiesTr);
     })
-
-
+	productBody.appendChild(propertiesTable);
 }));
