@@ -925,7 +925,7 @@ section, .footer{
     max-width: 450px;
 }
 
-.form{
+.form--contact{
     margin: auto;
     width: 100%;
 	max-width: 450px;
@@ -964,7 +964,7 @@ input::placeholder{
     resize: none;
 }
 
-.form > * + *{
+.form--contact > * + *{
     margin-top: 30px;
 }
 
@@ -983,7 +983,7 @@ input::placeholder{
   padding: .6em;
 }
 
-.form .btn{
+.form--contact .btn{
     cursor: pointer;
 }
 

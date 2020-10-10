@@ -25,6 +25,30 @@
     --box-shadow: 0 13px 15px -12px rgba(0,0,0,.15);
 }
 
+@media only screen and (min-width: 768px){
+    :root{
+       --fs-1: 1rem;
+       --fs-2: 1.333rem;
+       --fs-3: 1.777rem;
+       --fs-4: 2.369rem;
+       --fs-5: 3.157rem;
+       --fs-small: 0.75rem;
+   } 
+}
+
+
+@media only screen and (max-width: 328px){
+   :root{
+       --fs-1: 1rem;
+       --fs-2: 1.15rem;
+       --fs-3: 1.35rem;
+       --fs-4: 1.6rem;
+       --fs-5: 1.9rem;
+       --fs-small: 0.8rem;
+   }
+}
+
+
 .btn--product{
     line-height: 43px;
     border: 1px solid #fe7865;
@@ -54,7 +78,7 @@
 
 .intro{
     min-height: 200px !important;
-    height: min-content;
+    height: unset;
 }
 
 .intro--product{
@@ -68,6 +92,19 @@
 .textbox--intro--product{
     background-color: peachpuff;
     padding: 1em 1em 2em 1em;
+    margin-bottom: 1.5em;
+}
+
+.intro--print::after{
+    content: '';
+    display: block;
+    width: 104%;
+    transform: translateX(-2%);
+    height: 200px;
+    background-image: url('../Images/print-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .section__title--product{
@@ -76,6 +113,10 @@
     font-weight: 600;
     color: var(--clr-black-light);
     margin-bottom: .5em;
+    font-size: var(--fs-4);
+}
+
+.section__title--print{
     font-size: var(--fs-4);
 }
 
@@ -177,12 +218,22 @@
     max-width: 450px;
 }
 
+.product--print{
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border-bottom: 10px solid lightblue;
+}
+
 .product__title{
     text-align: left;
 }
 
 .product__body{
     padding: 1.5em;
+}
+
+.product__body--print{
+    border-radius: 100px;
 }
 
 .product__image{
@@ -201,10 +252,6 @@
 
 .product__image:hover .img{
     transform: scale(1.08);
-}
-
-.footer--product{
-    /* background-color: rgba(255, 218, 185, 0.452); */
 }
 
 .legal, .contact__address--GST > *{
@@ -346,7 +393,7 @@
 }
 
 @media only screen and (min-width: 620px){
-   
+
     .products{
         justify-content: space-around;
     }
@@ -360,18 +407,23 @@
     }
 
     
-.station-reached .side__link{
-    color: lightskyblue;
-}
+    .station-reached .side__link{
+        color: lightskyblue;
+    }
 
-
-
+    .product-galllery{
+        display: flex;
+    }
 }
 
 
 @media only screen and (min-width: 760px){
    .intro--product{
        padding: 2em;
+   }
+
+   .intro--print::after{
+       display: none;
    }
 
    .intro{
@@ -388,6 +440,7 @@
     .section__title--product{
         font-size: var(--fs-5);
     }
+
 
     .textbox--intro--product::before{
         content: '';
