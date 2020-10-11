@@ -9,10 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/products.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -85,7 +85,7 @@
 
        <main class="main">
 
-        <section class="modal" style="display: flex;">
+        <section class="modal modal--print" >
           
           <span class="close_card">x</span>
           <div class="swiper-container">
@@ -93,7 +93,9 @@
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                  <img src="Images/service6.jpg" alt="">
+                  <a class="modal-trigger">
+                    <img src="Images/service6.jpg" alt="">    
+                  </a>
                 </div>
                 
                 <div class="swiper-slide">
@@ -143,39 +145,39 @@
         <li class="product product--print service">
           <div class="product__body product__body--print">
               <h3 class="product__title">
-                  <a href="">Brochure Design</a>
+                  <a class="swiper-trigger">Brochure Design</a>
               </h3>
           </div>
-          <div class="product__image">
-              <a>
-                  <img class="img" src="Images/service6.jpg" alt="Description of the great product's appearance">
+          <div class="product__image ">
+              <a class="swiper-trigger">
+                  <img class="img noSelect" src="Images/service6.jpg" alt="Description of the great product's appearance">
               </a>
               </div>
-      </li>    
-      <li class="product product--print">
+      </li>
+      <li class="product product--print service">
         <div class="product__body product__body--print">
             <h3 class="product__title">
-                <a href="">Product Boxes</a>
+                <a class="swiper-trigger">Brochure Design</a>
             </h3>
         </div>
-        <div class="product__image">
-            <a>
-                <img class="img" src="Images/products1.jpg" alt="Description of the great product's appearance">
+        <div class="product__image ">
+            <a class="swiper-trigger">
+                <img class="img noSelect" src="Images/service6.jpg" alt="Description of the great product's appearance">
             </a>
             </div>
-    </li>   
-    <li class="product product--print">
+    </li>
+    <li class="product product--print service">
       <div class="product__body product__body--print">
           <h3 class="product__title">
-              <a href="">Wall Printing</a>
+              <a class="swiper-trigger">Brochure Design</a>
           </h3>
       </div>
-      <div class="product__image">
-          <a>
-              <img class="img" src="Images/products1.jpg" alt="Description of the great product's appearance">
+      <div class="product__image ">
+          <a class="swiper-trigger">
+              <img class="img noSelect" src="Images/service6.jpg" alt="Description of the great product's appearance">
           </a>
           </div>
-  </li>   
+  </li>
   
     </ul>
     </section>  
@@ -245,11 +247,9 @@
       pagination: {
         el: '.swiper-pagination',
       },
-
-
-      
     });
-
   </script>
+<script src="js/print.js"></script>
+
 </body>
 </html>
