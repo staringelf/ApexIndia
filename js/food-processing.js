@@ -175,13 +175,13 @@ categories.forEach((category, index)  => {
         productLi.dataset.values = values;
         productLi.innerHTML = `<div class="product__body">
             <h3 class="product__title">
-                <a href="">${product.name}</a>
+                <a class="modal-trigger">${product.name}</a>
             </h3>
             <p>${product.desc}</p>
             <small>By ApexIndia</small>
         </div>
         <div class="product__image noSelect">
-            <a class="product__image__link">
+            <a class="product__image__link modal-trigger">
                 <img class="img noSelect" src="products/food-processing/food-processing-${index+1}.JPG" alt="">
             </a>
             </div>`

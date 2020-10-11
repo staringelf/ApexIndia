@@ -7,7 +7,7 @@ const modal = document.querySelector('.modal');
 const productCard = document.querySelector('.product-card');
 const productImage = productCard.querySelector('.product-card__image');
 const productBody = productCard.querySelector('.product-card__body');
-const imageLinks = document.querySelectorAll('.product__image__link'); 
+const modalTriggers = document.querySelectorAll('.modal-trigger'); 
 const closeCard = document.querySelector('.close_card');
 
 function toggleAside(){
@@ -26,12 +26,12 @@ function disappear(){
 closeCard.addEventListener('click', disappear);
 
 
-imageLinks.forEach(image => image.addEventListener('click', function(e){
-    const imageClicked = e.target;
-    const productLi = e.target.parentNode.parentNode.parentNode;
+modalTriggers.forEach(trigger => trigger.addEventListener('click', function(e){
+    const triggerClicked = e.target;
+    const productLi = triggerClicked.closest('.product');
     document.body.classList.add('unscroll');
     modal.classList.add('appear');
-    productImage.innerHTML = `<img src="${imageClicked.src}" alt="">`;
+    productImage.innerHTML = `<img src="${productLi.querySelector('.img').src}" alt="">`;
     productBody.innerHTML = `<h4 class="product-card__title">${productLi.dataset.name}</h4>
     `;
     const properties = productLi.dataset.properties.split(',');
