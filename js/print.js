@@ -20,6 +20,7 @@ swiperTriggers.forEach(trigger => trigger.addEventListener('click', function(e){
       }
 
       swiper = new Swiper('.swiper-container', {
+		lazy: true,
         loop: true,
         grabCursor: true,
         navigation: {
