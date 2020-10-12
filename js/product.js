@@ -21,6 +21,7 @@ function disappear(){
     modal.classList.remove('appear');
     document.body.classList.remove('unscroll');
     productImage.innerHTML = '';
+    
 }
 
 closeCard.addEventListener('click', disappear);

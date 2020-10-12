@@ -162,10 +162,11 @@ const categories = [
 ];
 
 const ids = document.querySelectorAll('.side__link');
+const productTypes = ['food-processing', 'kitchen-equipment'];
 
-categories.forEach((category, index)  => {
+categories.forEach((category, outerindex)  => {
     const categoryUl = document.createElement('ul');
-    categoryUl.id = ids[index].getAttribute('href').substring(1);
+    categoryUl.id = ids[outerindex].getAttribute('href').substring(1);
     category.forEach((product, index) => {
         const productLi = document.createElement('li');
         productLi.dataset.name = product.name;
@@ -182,7 +183,7 @@ categories.forEach((category, index)  => {
         </div>
         <div class="product__image noSelect">
             <a class="product__image__link modal-trigger">
-                <img class="img noSelect" src="products/food-processing/food-processing-${index+1}.JPG" alt="">
+                <img class="img noSelect" src="products/food-processing/${productTypes[outerindex]}-${index+1}.JPG" alt="">
             </a>
             </div>`
         productLi.classList.add('product');

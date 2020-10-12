@@ -15,7 +15,6 @@
 
 <body>
    
-
     <header class="header scroll-down" role="header">
         <div class="container container--header">
           <div id="side-toggle" class="side-toggle">
@@ -102,7 +101,7 @@
             <aside id="aside" class="sidebar">
                 <ul class="side-nav">
                     <li class="side__item"><a href="#masks" class="side__link">Masks</a></li>
-                    <li class="side__item"><a href="#sanitizers" class="side__link">Sanitizers</a></li>
+                    <li class="side__item"><a href="#disposable-goods" class="side__link">Disposable Products</a></li>
                     <li class="side__item"><a href="#stands" class="side__link">Sanitizer Stands</a></li>
                     <li class="side__item"><a href="#sprays" class="side__link">Sprays</a></li>
                     <li class="side__item"><a href="#others" class="side__link">Others</a></li>   
@@ -115,7 +114,7 @@
         <main class="main">
 
 
-        <section class="modal">
+              <section class="modal">
           <article class="product-card">
             <span class="close_card">x</span>
             
@@ -124,13 +123,23 @@
             <div class="product-card__body">
 
             </div>
-            <form class="product-card__form" action="">
-              <input type="tel" maxlength="10" minlength="10"  id="phone" name="phone" placeholder="Mobile No." class="form__input" required>
-              <input type="submit" value="Get Quote" id="submit" class="btn btn--form">
+		
+            <form  method="POST" data-email="" class="form product-card__form" action="https://script.google.com/macros/s/AKfycbysgtvGIS0pnmbfoSWBss1GVW-fAudTbvyRzmQB2smG_fyXSCk/exec" ">
+			  <div class="form-elements">
+				<input type="text" id="name" name="name" placeholder="Name" class="form__input form__input--product-card">
+				<input type="tel" maxlength="10" minlength="10"  id="phone" name="phone" placeholder="Mobile" class="form__input" required>
+				<input type="submit" value="Get Quote" id="submit" class="btn btn--form">
+			  </div>
+			  
+            <div style="display:none" class="thankyou_message">
+                <h4 style="text-transform: none; font-size: 15px">Thanks for contacting us! We will get back to you soon!
+                </h4>
+            </div>
             </form>
           </article>
-        </section>          
-          <section class="our-products">
+        </section>
+
+    <section class="our-products">
        
           
            </section>
@@ -186,6 +195,6 @@
   <script src = "js/nav.js"></script>
   <script src="js/healthcare.js"></script>
   <script src="js/product.js"></script>
-
+  <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
 </body>
 </html>
