@@ -7,7 +7,7 @@ let category = 'box';
 
 swiperTriggers.forEach(trigger => trigger.addEventListener('click', function(e){
     target = e.target;
-    const productLi = target.closest('.product');
+    const productLi = target.closest('.product--print');
     console.log(productLi);
     category = productLi.dataset.category;
     console.log(category);
@@ -20,7 +20,6 @@ swiperTriggers.forEach(trigger => trigger.addEventListener('click', function(e){
       }
 
       swiper = new Swiper('.swiper-container', {
-		lazy: true,
         loop: true,
         grabCursor: true,
         navigation: {

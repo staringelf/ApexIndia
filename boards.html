@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/products.css">
 </head>
@@ -80,10 +81,52 @@
       </div>
        </header>
       
-     
 
-    <section class="intro intro--product intro--healthcare">
-      <div class="textbox--intro--product textbox--intro--product--healthcare">
+       <main class="main">
+
+        <section class="modal modal--print" >
+          
+          <span class="close_card">x</span>
+          <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <!-- <div class="swiper-slide">
+                  <a class="modal-trigger">
+                    <img src="Images/service6.jpg" alt="">    
+                  </a>
+                </div>
+                
+                <div class="swiper-slide">
+                  <img src="Images/service6.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="Images/service6.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="Images/service6.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="Images/service6.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="Images/service6.jpg" alt="">
+                </div> -->
+            </div>
+            If we need pagination
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+        </section>
+
+          <section class="intro intro--product intro--print">
+      <div class="textbox--intro--product textbox--intro--print">
         <h2 class="section__title section__title--product">A world of prints</h2>
         <p class="intro--product__body">
             One day however a small line of blind text by the
@@ -93,14 +136,52 @@
         <a href="contact.html" class="btn btn--product">Contact Us</a>
     </div>
     </section>
-        
-        <main class="main">
 
-          
-          <section class="our-products">
-       
-          
-           </section>
+    <section class="print-services">
+      <h2 class="section__title section__title--print">Products</h2>
+      
+      <ul class="product-gallery services">
+        <li class="product--print service" data-category="card">
+          <div class="product__body product__body--print">
+              <h3 class="product__title">
+                  <a class="swiper-trigger">Brochure Design</a>
+              </h3>
+          </div>
+          <div class="product__image ">
+              <a class="swiper-trigger">
+                  <img class="img noSelect" src="products/design/card-1.jpg" alt="Description of the great product's appearance">
+              </a>
+              </div>
+      </li>
+      <li class="product--print service" data-category="menu">
+        <div class="product__body product__body--print">
+            <h3 class="product__title">
+                <a class="swiper-trigger">Leaflets</a>
+            </h3>
+        </div>
+        <div class="product__image ">
+            <a class="swiper-trigger">
+                <img class="img noSelect" src="products/design/menu-1.jpg" alt="Description of the great product's appearance">
+            </a>
+            </div>
+    </li>
+    <li class="product--print service" data-category="board">
+      <div class="product__body product__body--print">
+          <h3 class="product__title">
+              <a class="swiper-trigger">Outdoor Boards</a>
+          </h3>
+      </div>
+      <div class="product__image ">
+          <a class="swiper-trigger">
+              <img class="img noSelect" src="products/design/board-1.jpg" alt="Description of the great product's appearance">
+          </a>
+          </div>
+  </li>
+  
+    </ul>
+    </section>  
+    
+               
         </main>
 
     <footer class="footer">
@@ -147,8 +228,10 @@
         </footer>
 
     
-
-
   <script src = "js/nav.js"></script>
+  
+  <script src="js/swiper.js"></script>
+
+<script src="js/print.js"></script>
 </body>
 </html>
