@@ -218,7 +218,7 @@
     max-width: 450px;
 }
 
-.product--print{
+.product--design{
     background-color: #fff;
     box-shadow: 0 0 15px rgba(0,0,0,0.1);
     border-bottom: 10px solid lightblue;
@@ -335,6 +335,16 @@
     display: block;
 }
 
+.modal--boards.appear{
+    display: flex;
+    object-position: top;
+}
+
+.modal--boards__img{
+    height: 100%;
+    width: 80vw;
+}
+
 .product-card__form{
     position: sticky;
     left: 2%;
@@ -374,13 +384,13 @@
 }
 
 .close_card{
-    position: sticky;
-    background-color: var(--clr-dark);
-    border-radius: 4px;
+    position: absolute;
+    background-color: var(--clr-light);
+    border-radius: 20px;
     height: 30px;
     width: 30px;
-    left: 95%;
-    top: 0px;
+    right: 1px;
+    top: 1px;
     font-size: 22px;
     font-family: monospace;
     display: flex;
@@ -395,9 +405,13 @@
 
 .swiper-button-next,
 .swiper-button-prev{
-    color: rgba(0,0,0);
+    color: rgb(0,0,0);
     width: 28px;
     height: 28px;
+}
+
+.swiper-button--board{
+    color: #fff;
 }
 
 .swiper-button-next{
@@ -447,21 +461,65 @@
     align-items: center;
 }
 
-.product--print.service{
+.product--design.service{
     width: 95%;
     border-radius: 0 0 10px 10px;
     margin: 0 auto 2em auto;
 }
 
-.product--print .product__image{
+.product--design .product__image{
     height: 270px;
     border-radius: 4px 4px 0 0;
 }
 
-.product--print{
+.product--design{
     display: flex;
     flex-direction: column;
 }
+
+.boards__title{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    font-size: var(--fs-3);
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.boards{
+    padding-top: 5em;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 280px;
+    grid-gap: 2.5em;
+
+}
+
+.boards + .boards{
+    margin-top: 5em;
+}
+
+
+.modal--boards .swiper-container{
+    width: 80%;
+    height: 80%;
+}
+
+.modal--boards{
+}
+
+
+
+/* 
+.board{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.board + .board{
+    margin-top: 2.5em;
+} */
 
 @media only screen and (min-width: 620px){
 
@@ -493,7 +551,7 @@
     height: 65%;
   }
 
-  .product--print.service{
+  .product--design.service{
       margin: 0 auto 2em auto;
   }
 
@@ -654,7 +712,7 @@
         background: var(--clr-white);
     }
 
-    .product--print.service{
+    .product--design.service{
         max-width: 340px;
     }
         
@@ -709,7 +767,7 @@
         padding: 0;
     }
     
-  .product--print.service{
+  .product--design.service{
     margin: 0 0 2em 0;
 }
 
