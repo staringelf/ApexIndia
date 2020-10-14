@@ -341,8 +341,8 @@
 }
 
 .modal--boards__img{
-    height: 100%;
-    width: 80vw;
+    height: 40%;
+    width: 100%;
 }
 
 .product-card__form{
@@ -547,8 +547,8 @@
 
 @media only screen and (min-width: 700px){
     .swiper-container {
-    width: 40%;
-    height: 65%;
+    width: 50%;
+    height: 60%;
   }
 
   .product--design.service{
@@ -715,7 +715,11 @@
     .product--design.service{
         max-width: 340px;
     }
-        
+	
+	.modal--boards__img{
+		height: 100%;
+		width: 80vw;
+	}   
 }
 
 

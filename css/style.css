@@ -543,6 +543,8 @@ section, .footer{
 
 .section__title--intro--contact{
     font-size: var(--fs-4);
+	text-align: left
+	margin: unset;
 }
 
 
@@ -931,7 +933,7 @@ section, .footer{
     background: var(--clr-creamy);
     border-radius: 4px;
     box-shadow: 0 0 5px rgba(0,0,0,.15);
-    width: 90%;
+    width: 100%;
     max-width: 450px;
 }
 
@@ -1303,8 +1305,8 @@ input::placeholder{
         top: 70%;
     }
 
-    .form_container{
-        margin: unset;  
+    .form_container{ 
+		width: 90%
     }
 
 }
