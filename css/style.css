@@ -152,6 +152,7 @@ p{
     transition: transform .35s ease;
 }
 
+
 .service:hover .icon--service{
     transform: scale(1.3);
 }
