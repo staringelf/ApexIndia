@@ -19,10 +19,18 @@
     --clr-white: #fff;
     --clr-black: rgb(99, 59, 59);
     --clr-creamy: #f8f9fa;
-    --clr-creamy-2: #fafafa;
+    --clr-creamy-2: fafa;
+    --clr-product: #d4a59a;
+    --clr-sidebar: #fefefe;
+    --clr-intro: #d4a59a;
+    --clr-text--product: black;
     --line-height: 1.6;
 
     --box-shadow: 0 13px 15px -12px rgba(0,0,0,.15);
+}
+
+.main{
+    background: #fff;
 }
 
 @media only screen and (min-width: 768px){
@@ -90,7 +98,7 @@
 }
 
 .textbox--intro--product{
-    background-color: peachpuff;
+    background-color: var(--clr-intro);
     padding: 1em 1em 2em 1em;
     margin-bottom: 1.5em;
 }
@@ -142,7 +150,7 @@
 }
 
 .sidebar{
-    background-color: #faf4fc;
+    background-color: var(--clr-sidebar);
     padding: 5em 2em;
     height: 98vh;
     width: 50vw;
@@ -211,11 +219,13 @@
 .product{
     display: flex;
     flex-direction: column;
-    background: mistyrose;
+    background: var(--clr-product);
     overflow: hidden;
     margin-bottom: 2em;
     flex: 1 1 300px;
     max-width: 450px;
+    color: #eee;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
 
 .product--design{
@@ -226,10 +236,13 @@
 
 .product__title{
     text-align: left;
+    text-transform: capitalize;
+    letter-spacing: unset;
 }
 
 .product__body{
     padding: 1.5em;
+    color: var(--clr-text--product)
 }
 
 .product__body--print{
@@ -303,7 +316,7 @@
 
 .product-card__body{
     width: 100%;
-    background: peachpuff;
+    background: var(--clr-intro);
     min-height: 200px;
     padding: .5em;
 }
@@ -753,10 +766,6 @@
 
    .products{
        --subtractor: 300;
-   }
-
-   .side-nav{
-    border: 10px solid #fe786510;
    }
 
      .side__link{
