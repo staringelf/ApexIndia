@@ -120,7 +120,20 @@ const categories = [
             type: 'disposable good',
             alt: ''
         },
-         
+        
+		{
+            name: 'Disposable Gloves',
+            details: {
+                BFE: '>95%',
+                Loop: 'Ear-Loop',
+                'Pieces per box': '100pcs/box',
+                Size: '14.5 x 9.0cm'
+            },
+            desc: 'Latex',
+            type: 'disposable good',
+            alt: ''
+        },
+        		
 
     ]
 
