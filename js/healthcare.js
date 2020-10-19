@@ -7,7 +7,7 @@ const categories = [
             details: {
                 BFE: '>95%',
                 Loop: 'Ear-Loop',
-                'Pieces per box': '100pcs/box',
+                'Pieces per pack': '100pcs/pack',
                 Size: '17.5 x 9.5cm'
             },
             desc: '3Ply, 25G + 25G + 25G',
@@ -20,7 +20,7 @@ const categories = [
             details: {
                 BFE: '>95%',
                 Loop: 'Ear-Loop',
-                'Pieces per box': '100pcs/box',
+                'Pieces per pack': '100pcs/pack',
                 Size: '14.5 x 9.0cm'
             },
             desc: '3Ply, 25G + 25G + 25G',
@@ -33,7 +33,7 @@ const categories = [
             details: {
                 BFE: '>95%',
                 Loop: 'Ear-Loop',
-                'Pieces per box': '100pcs/box',
+                'Pieces per pack': '100pcs/pack',
                 Size: '14.5 x 9.0cm'
             },
             desc: 'For Medical Use',
@@ -44,10 +44,10 @@ const categories = [
         {
             name: 'KN 95 Face Mask',
             details: {
-                BFE: '>95%',
+                BFE: '&#8805 95%',
+                Clip: 'Nose-Clip and ear',
                 Loop: 'Ear-Loop',
-                'Pieces per box': '100pcs/box',
-                Size: '14.5 x 9.0cm'
+                Size: '15.5 x 10.0cm'
             },
             desc: '5 Layers',
             type: 'mask',
@@ -86,9 +86,10 @@ const categories = [
             name: 'Isolation Gown',
             details: {
                 BFE: '>95%',
-                Loop: 'Ear-Loop',
-                'Pieces per box': '100pcs/box',
-                Size: '14.5 x 9.0cm'
+                Ties: 'Waist and Neck',
+                'Minimum Order': '20',
+                Cuff: 'Elastic',
+                Size: '115 x 137cm'
             },
             desc: 'Non Sterile, 35 GSM',
             type: 'disposable good',
@@ -98,10 +99,8 @@ const categories = [
         {
             name: 'Disposable SMS Medical Gown',
             details: {
-                BFE: '>95%',
-                Loop: 'Ear-Loop',
-                'Pieces per box': '100pcs/box',
-                Size: '14.5 x 9.0cm'
+                GSM: '40',
+                Sizes: 'All Available',
             },
             desc: '40 GSM',
             type: 'disposable good',
@@ -111,10 +110,9 @@ const categories = [
         {
             name: 'Disposable Cap ',
             details: {
-                BFE: '>95%',
-                Loop: 'Ear-Loop',
-                'Pieces per box': '100pcs/box',
-                Size: '14.5 x 9.0cm'
+                Material: 'PP',
+                Color: 'Blue',
+                Size: '24 inches'
             },
             desc: 'Non Woven',
             type: 'disposable good',
@@ -133,14 +131,197 @@ const categories = [
             type: 'disposable good',
             alt: ''
         },
-        		
 
+        {
+            name: 'Shoe Covers',
+            details: {
+                Material: 'PP',
+                Color: 'Blue',
+                Size: '41 x 17cm'
+            },
+            desc: '35 GSM',
+            type: 'disposable good',
+            alt: ''
+        },
+
+        {
+            name: 'Disposable Gloves',
+            details: {
+                BFE: '>95%',
+                Loop: 'Ear-Loop',
+                'Pieces per box': '100pcs/box',
+                Size: '14.5 x 9.0cm'
+            },
+            desc: 'Latex',
+            type: 'disposable good',
+            alt: ''
+        },
+        
+        {
+            name: 'PPE Kit',
+            details: {
+                BFE: '>95%',
+                Loop: 'Ear-Loop',
+                'Pieces per box': '100pcs/box',
+                Size: '14.5 x 9.0cm'
+            },
+            desc: '',
+            type: 'disposable good',
+            alt: ''
+        },
+        
+        {
+            name: 'PPE Kit',
+            details: {
+                BFE: '>95%',
+                Loop: 'Ear-Loop',
+                'Pieces per box': '100pcs/box',
+                Size: '14.5 x 9.0cm'
+            },
+            desc: '',
+            type: 'disposable good',
+            alt: ''
+        }
+    ],
+
+    [
+        {
+            name: 'Bed Sheets',
+            details: {
+            },
+            desc: '',
+            type: 'salon',
+            alt: ''
+        },
+        
+        {
+            name: 'Cutting Sheets',
+            details: {
+            },
+            desc: '',
+            type: 'salon',
+            alt: ''
+        },
+
+        {
+            name: 'Disposable Gloves',
+            details: {
+            },
+            desc: 'Latex',
+            type: 'salon',
+            alt: ''
+        },
+    ],
+
+    [
+        {
+            name: 'Fogger Machine',
+            details: {
+                Power: '900W',
+                'Smoke Output': '18000cu. ft/min',
+                'Spray Distance': '3-5cm',
+                Capacity: '100mL',
+                'Gross Weight': '3.3Kg'
+            },
+            desc: '',
+            type: 'sanitize',
+            alt: ''
+        },
+        
+        {
+            name: 'Automatic sanitizer dispenser',
+            details: {
+                Size: '14.5 x 9.0cm'
+            },
+            desc: '',
+            type: 'sanitize',
+            alt: ''
+        },
+        
+        {
+            name: 'Tiny Fogger',
+            details: {
+            },
+            desc: '',
+            type: 'sanitize',
+            alt: ''
+        },
+        
+        {
+            name: 'Automatic sanitizer dispenser stand',
+            details: {
+            },
+            desc: '',
+            type: 'sanitize',
+            alt: ''
+        },
+        
+        {
+            name: 'Anti bacterial hand wash',
+            details: {
+                BFE: '>95%',
+                Loop: 'Ear-Loop',
+                'Pieces per box': '100pcs/box',
+                Size: '14.5 x 9.0cm'
+            },
+            desc: 'Latex',
+            type: 'sanitize',
+            alt: ''
+        },
+
+        {
+            name: 'Sanitizers and HandWashes',
+            details: {
+            
+			},
+			desc: '',
+            type: 'sanitize',
+            alt: ''
+        },
+		
+        {
+            name: 'Infra Red Thermometer',
+            details: {
+
+			},
+			desc: '',
+            type: 'sanitize',
+            alt: ''
+        },
+		
+        {
+            name: 'Sanitizers',
+            details: {
+                BFE: '>95%',
+                Loop: 'Ear-Loop',
+                'Pieces per box': '100pcs/box',
+                Size: '14.5 x 9.0cm'
+            },
+            desc: '',
+            type: 'sanitize',
+            alt: ''
+        },
+		
+		{
+            name: 'Face Shield',
+            details: {
+                BFE: '>95%',
+                Loop: 'Ear-Loop',
+                'Pieces per box': '100pcs/box',
+                Size: '14.5 x 9.0cm'
+            },
+            desc: '',
+            type: 'sanitize',
+            alt: ''
+        },
+		
     ]
+
 
 ];
 
 const ids = document.querySelectorAll('.side__link');
-const productTypes = ['mask', 'disposable'];
+const productTypes = ['mask', 'disposable', 'salon', 'sanitize'];
 
 categories.forEach((category, outerindex)  => {
     const categoryUl = document.createElement('ul');

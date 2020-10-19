@@ -504,7 +504,9 @@ section, .footer{
 .intro--about{
     min-height: unset;
     height: 400px;
-    background: url('../Images/back1.jpg');
+    background: url('../Images/contact.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
     /* background-attachment: fixed; */
 }
 
