@@ -3,6 +3,7 @@
 const toggleAsideButton = document.querySelector('#side-toggle');
 const sideGrp = document.querySelector('.side-grp');
 const aside = document.querySelector('#aside');
+const sideLinks = document.querySelectorAll('.side__link');
 const modal = document.querySelector('.modal');
 const productCard = document.querySelector('.product-card');
 const productImage = productCard.querySelector('.product-card__image');
@@ -10,16 +11,19 @@ const productBody = productCard.querySelector('.product-card__body');
 const modalTriggers = document.querySelectorAll('.modal-trigger'); 
 const closeCard = document.querySelector('.close_card');
 
+let station;
+let lastStation;
+
 function toggleAside(){
     aside.classList.toggle('open');
     sideGrp.classList.toggle('open');
-    toggleAsideButton.classList.toggle('rotate');
+    // toggleAsideButton.classList.toggle('rotate');
 }
 
 sideGrp.addEventListener('click', function(e){
     if(!aside.classList.contains('open') || e.target === aside || e.target.classList.contains('side__item'))
             return;
-        toggleAside();
+    toggleAside();
 
 });
 

@@ -347,6 +347,17 @@ section, .footer{
     margin: 0 auto;
 }
 
+.container--header--filter{
+    position: relative;
+}
+
+.container--header--filter .logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
 .container--nav{
     box-shadow: 0 0 10px rgba(0,0,0,10%);
 }
@@ -1156,6 +1167,11 @@ input::placeholder{
         padding: 0;
         width: max-content;
         background-color: transparent;
+    }
+
+    .container--header--filter .logo{
+        position: static;
+        transform: unset;
     }
 
     .container--nav, .container--header{

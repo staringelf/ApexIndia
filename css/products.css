@@ -15,7 +15,7 @@
     --clr-primary-2: #001a57da;
     --clr-black-light: #343a40;
     --clr-dark: #777;
-    --clr-light: rgba(43, 27, 27, 0.25);
+    --clr-light: rgba(43, 27, 27, 0.1);
     --clr-white: #fff;
     --clr-black: rgb(99, 59, 59);
     --clr-creamy: #f8f9fa;
@@ -185,27 +185,36 @@
 .side__link{
     font-size: 16px;
     width: 100%;
-    color: var(--clr-primary);
+    color: var(--clr-black-light);
     font-weight: 600;
     text-transform: capitalize;
     transition: all .15s ease-out;
 }
 
+
 .side__link:hover{
-    color: lightskyblue;
+    color: var(--clr-product);
 }
 
 .side-toggle{
     padding: 0 .5rem !important;
     display: block;
     cursor: pointer;
-    width: 35px;
     align-items: center;
     justify-content: center;
-    background: white;
     transition: transform .04s .1s ease-out;
     z-index: 20;
-    height: 19px;
+}
+
+.side-toggle__button{
+    text-transform: capitalize;
+    padding: .2em .45em;
+    border: 2px solid var(--clr-dark);
+}
+
+.side-toggle__button:hover,
+.side-toggle__button:focus{
+
 }
 
 .toggle-button--sidebar{
@@ -231,7 +240,7 @@
     flex: 1 1 300px;
     max-width: 450px;
     color: #eee;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    box-shadow: 0 0 15px rgba(0,0,0,0.15);
 }
 
 .product--design{
@@ -523,21 +532,6 @@
     height: 80%;
 }
 
-.modal--boards{
-}
-
-
-
-/* 
-.board{
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-.board + .board{
-    margin-top: 2.5em;
-} */
-
 @media only screen and (min-width: 620px){
 
     .products{
@@ -550,11 +544,6 @@
 
     .product:nth-of-type(odd){
         margin-right: 1em;
-    }
-
-    
-    .station-reached .side__link{
-        color: lightskyblue;
     }
 
     .product-galllery{
@@ -752,7 +741,9 @@
 
    .side-grp{
        position: sticky;
-   }
+       top: 60px;
+       transform: none;
+    }
 
    .sidebar{
        transform: none;
@@ -761,7 +752,9 @@
        width: 20vw;
        min-width: 200px;
        height: 100vh; 
-   }
+       box-shadow: 10px 0 6px -8px rgba(0,0,0,.15);
+       background-color: var(--clr-creamy);
+    }
 
    .product{
        width: 100%;
@@ -774,10 +767,6 @@
 
      .side__link{
     font-size: 14px;
-    }
-
-    .station-reached{
-        background-color: #fe786510;
     }
 
     .product-gallery{
