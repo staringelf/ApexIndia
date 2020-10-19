@@ -443,8 +443,6 @@
     left: 0;
 }
 
-
-
 .swiper-button-prev::after,
 .swiper-button-next::after{
     transform: scale(.5);
