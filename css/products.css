@@ -20,10 +20,10 @@
     --clr-black: rgb(99, 59, 59);
     --clr-creamy: #f8f9fa;
     --clr-creamy-2: fafa;
-    --clr-product: #d4a59a;
+    --clr-product: /*#d4a59a;*/#fafafa;
     --clr-sidebar: #fefefe;
-    --clr-intro: #d4a59a;
-    --clr-text--product: black;
+    --clr-intro: #57678f;
+    --clr-text--product: black;;
     --line-height: 1.6;
 
     --box-shadow: 0 13px 15px -12px rgba(0,0,0,.15);
@@ -68,6 +68,11 @@
     position: relative;
 }
 
+.btn--product--blue{
+    border-color: var(--clr-primary);
+    background-color: var(--clr-primary);
+}
+
 .btn--product::after{
     content: '';
     height: 1px;
@@ -78,10 +83,22 @@
     top: 140%;
 }
 
+
+.btn--product--blue::after{
+    background-color: var(--clr-primary);
+}
+
+
 .btn--product:hover{
     background-color: var(--clr-white);
     color: #fe7865;
     border-color: #fe7865;
+}
+
+.btn--product--blue:hover{
+    color: var(--clr-primary);
+    border-color: var(--clr-primary);
+    background-color: var(--clr-white);
 }
 
 .intro{
@@ -97,10 +114,19 @@
     padding: 4em 1.4em;
 }
 
+
 .textbox--intro--product{
-    background-color: var(--clr-intro);
+    background-color: var(--clr-product);
     padding: 1em 1em 2em 1em;
     margin-bottom: 1.5em;
+}
+
+.textbox--intro--blue{
+    background-color: lightblue;
+}
+
+.textbox--intro--blue::before{
+    background-image: url('../Images/print-1.jpg');
 }
 
 .intro--print::after{
@@ -149,8 +175,9 @@
     z-index: 10;
     width: 100%;
     height: 100%;
-    transition: transform .35s ease-in-out;
+    transition: transform .2s ease .25s;
     transform: translateX(-100%);
+    background: rgba(0,0,0,.075);
 }
 
 .sidebar{
@@ -166,7 +193,10 @@
     transform: translateX(-100%);
     min-width: 240px;
     z-index: 20;
+    /* box-shadow: 2px 0 5px rgba(0,0,0,.15); */
 }
+
+
 
 
 .open{
@@ -197,12 +227,11 @@
 }
 
 .side-toggle{
-    padding: 0 .5rem !important;
+    padding: 0 .75em !important;
     display: block;
     cursor: pointer;
     align-items: center;
     justify-content: center;
-    transition: transform .04s .1s ease-out;
     z-index: 20;
 }
 
@@ -210,6 +239,7 @@
     text-transform: capitalize;
     padding: .2em .45em;
     border: 2px solid var(--clr-dark);
+    /* border-radius: .1px; */
 }
 
 .side-toggle__button:hover,
@@ -331,9 +361,10 @@
 
 .product-card__body{
     width: 100%;
-    background: var(--clr-intro);
+    background: var(--clr-product);
     min-height: 200px;
     padding: .5em;
+	color: var(--clr-text--product);
 }
 
 .product-card__title{

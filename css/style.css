@@ -19,7 +19,7 @@ html{
 
 
     --clr-primary:  #001a57;
-    --clr-secondary: #001a57a6;
+    --clr-secondary: #57678f;/*#001a57a6;*/
     --clr-primary-2: #001a57da;
     --clr-black-light: #343a40;
     --clr-dark: #555;
@@ -351,7 +351,7 @@ section, .footer{
     position: relative;
 }
 
-.container--header--filter .logo{
+.container--header--filter .logo--header{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -504,10 +504,10 @@ section, .footer{
 .intro--about{
     min-height: unset;
     height: 400px;
-    background: url('../Images/contact.jpg');
+	background-image: none;
+	background-color: var(--clr-light);
 	background-size: cover;
 	background-repeat: no-repeat;
-    /* background-attachment: fixed; */
 }
 
 .intro--contact{
@@ -777,8 +777,9 @@ section, .footer{
     left: 0;
     bottom: 0;
     transition: transform .2s ease-in;
-    background-color: #001a577d;
+    background-color: /*#002a47;*/var(--clr-secondary);
     padding: 1em 2em 1em 1em;
+	color: white;
 }
 
 .three-rows{
